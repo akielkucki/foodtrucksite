@@ -2,16 +2,15 @@ import Link from "next/link";
 import {brandName, brandNameLegal} from "../../lib/vars";
 
 const navigation = {
-  products: [
-    { name: "Cooking Equipment", href: "/parts/cooking-equipment" },
-    { name: "Service Parts", href: "/parts/service-parts" },
-    { name: "Accessories", href: "/parts/accessories" },
-    { name: "Custom Builds", href: "/parts/custom-builds" },
-    { name: "All Products", href: "/parts" },
+  builds: [
+    { name: "Custom Builds", href: "/custom-builds" },
+    { name: "Design Gallery", href: "/gallery" },
+    { name: "Build Process", href: "/process" },
+    { name: "Get a Quote", href: "/quote" },
   ],
   services: [
-    { name: "Parts Sourcing", href: "/services/parts-sourcing" },
-    { name: "Custom Builds", href: "/services/custom-builds" },
+    { name: "Custom Fabrication", href: "/services/custom-fabrication" },
+    { name: "Parts & Equipment", href: "/parts" },
     { name: "Repair & Maintenance", href: "/services/repair-maintenance" },
     { name: "Consulting", href: "/services/consulting" },
   ],
@@ -110,7 +109,7 @@ export default function Footer() {
               {brandName.split("_").map((item, i) => (i===0 ? <span key={i}>{item}</span> : <span key={i} className="text-[#D6452F]"> {item}</span>))}
             </Link>
             <p className="mt-4 text-sm text-white/70">
-              Quality food truck parts and equipment since 1999. Your trusted partner for keeping mobile kitchens running.
+              Custom food truck builders since 1999. From concept to the street, we bring your mobile kitchen vision to life.
             </p>
             <div className="mt-6 space-y-3 text-sm text-white/70">
               <p className="flex items-start gap-2">
@@ -135,13 +134,13 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Products Links */}
+          {/* Custom Builds Links */}
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wider text-white">
-              Products
+              Custom Builds
             </h4>
             <ul className="mt-4 space-y-3">
-              {navigation.products.map((item) => (
+              {navigation.builds.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}

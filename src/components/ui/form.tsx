@@ -14,13 +14,13 @@ export default function ContactForm() {
     const [formData, setFormData] = useState<FormData>({
         name: '',
         email: '',
-        helpType: 'Learn More',
+        helpType: 'Custom Build Quote',
         message: '',
     });
 
     const [isOpen, setIsOpen] = useState(false);
 
-    const helpOptions = ['Learn More', 'Get a Free Quote', 'Other'];
+    const helpOptions = ['Custom Build Quote', 'Parts & Service', 'General Inquiry'];
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -156,8 +156,8 @@ export default function ContactForm() {
                     </div>
                 </div>
 
-                {/* Message/Textarea Field (shown when "Other" is selected) */}
-                {formData.helpType === 'Other' && (
+                {/* Message/Textarea Field (shown when "General Inquiry" is selected) */}
+                {formData.helpType === 'General Inquiry' && (
                     <div>
             <textarea
                 name="message"

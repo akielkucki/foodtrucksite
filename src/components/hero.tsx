@@ -22,27 +22,26 @@ export default function Hero() {
             <div className="mx-auto flex h-full max-w-7xl items-center px-6 lg:px-8">
               <div className="max-w-2xl">
                 <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-                  Quality Food Truck Parts & Service{" "}
+                  Custom Food Trucks Built to Your Vision{" "}
                   <span className="text-[#F5A623]">Since 1999</span>
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-white/90 sm:text-xl">
-                  Everything you need to keep your mobile kitchen running at peak
-                  performance.
+                  From concept to the street, we design and build custom food trucks that bring your culinary business to life.
                 </p>
 
                 {/* Quick CTAs */}
                 <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:gap-6">
                   <Link
-                    href="/parts"
+                    href="/custom-builds"
                     className="rounded-lg bg-[#D6452F] px-8 py-3.5 text-center text-base font-semibold text-white shadow-lg transition-all hover:bg-[#952d1d] hover:shadow-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D6452F]"
                   >
-                    View Parts
+                    View Our Builds
                   </Link>
                   <Link
                     href="/quote"
                     className="rounded-lg border-2 border-white bg-white/10 px-8 py-3.5 text-center text-base font-semibold text-white backdrop-blur-sm transition-all hover:bg-white/20"
                   >
-                    Get a Quote
+                    Start Your Build
                   </Link>
                 </div>
               </div>
@@ -68,14 +67,14 @@ function Benefits() {
         <div className="flex flex-col items-center text-center">
           <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#EDEDED]">
             <svg className="h-8 w-8 text-[#D6452F]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
             </svg>
           </div>
           <h3 className="mb-2 text-lg font-semibold text-[#2F2F2F]">
-            Everything You Need
+            Custom Designs
           </h3>
           <p className="text-sm text-[#8A8A8A]">
-            Complete inventory of parts and equipment for your food truck
+            Fully customized layouts tailored to your menu and workflow
           </p>
         </div>
 
@@ -83,14 +82,14 @@ function Benefits() {
         <div className="flex flex-col items-center text-center">
           <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#EDEDED]">
             <svg className="h-8 w-8 text-[#F5A623]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
             </svg>
           </div>
           <h3 className="mb-2 text-lg font-semibold text-[#2F2F2F]">
-            Fast Shipping
+            Turnkey Solutions
           </h3>
           <p className="text-sm text-[#8A8A8A]">
-            Quick turnaround on orders to minimize your downtime
+            From concept to completion, we handle every detail of your build
           </p>
         </div>
 
@@ -102,10 +101,10 @@ function Benefits() {
             </svg>
           </div>
           <h3 className="mb-2 text-lg font-semibold text-[#2F2F2F]">
-            Expert Support
+            Expert Builders
           </h3>
           <p className="text-sm text-[#8A8A8A]">
-            Knowledgeable team ready to help you find the right parts
+            Experienced team with expertise in mobile kitchen construction
           </p>
         </div>
 
@@ -117,10 +116,10 @@ function Benefits() {
             </svg>
           </div>
           <h3 className="mb-2 text-lg font-semibold text-[#2F2F2F]">
-            Trusted Since 1999
+            Building Since 1999
           </h3>
           <p className="text-sm text-[#8A8A8A]">
-            25+ years of experience serving the food truck industry
+            25+ years of experience building custom food trucks
           </p>
         </div>
       </div>

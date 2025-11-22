@@ -7,10 +7,10 @@ import {brandName} from "../../lib/vars";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "Parts", href: "/parts" },
+  { name: "Custom Builds", href: "/custom-builds" },
   { name: "Services", href: "/services" },
+  { name: "Parts", href: "/parts" },
   { name: "About", href: "/about" },
-  { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" },
 ];
 
