@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import {brandName} from "../../lib/vars";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -77,7 +78,7 @@ export default function Navbar() {
         <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:h-20 lg:px-8">
           {/* Logo */}
           <Link href="/" className="relative z-50 text-xl font-bold text-[#2F2F2F]">
-            Royal Vending<span className="text-[#D6452F]"> Cart</span>
+            {brandName.split("_").map((item, i) => (i===0 ? <span key={i}>{item}</span> : <span key={i} className="text-[#D6452F]"> {item}</span>))}
           </Link>
 
           {/* Desktop Navigation */}

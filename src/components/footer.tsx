@@ -1,4 +1,5 @@
 import Link from "next/link";
+import {brandName, brandNameLegal} from "../../lib/vars";
 
 const navigation = {
   products: [
@@ -106,7 +107,7 @@ export default function Footer() {
           {/* Brand & Contact Info */}
           <div className="lg:col-span-2">
             <Link href="/" className="text-2xl font-bold text-white">
-              FoodTruck<span className="text-[#D6452F]">Parts</span>
+              {brandName.split("_").map((item, i) => (i===0 ? <span key={i}>{item}</span> : <span key={i} className="text-[#D6452F]"> {item}</span>))}
             </Link>
             <p className="mt-4 text-sm text-white/70">
               Quality food truck parts and equipment since 1999. Your trusted partner for keeping mobile kitchens running.
@@ -218,7 +219,7 @@ export default function Footer() {
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
             {/* Copyright & Legal */}
             <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-white/50">
-              <span>&copy; {new Date().getFullYear()} FoodTruckParts. All rights reserved.</span>
+              <span>&copy; {new Date().getFullYear()} {brandNameLegal}. All rights reserved.</span>
               <Link href="/privacy" className="hover:text-white">
                 Privacy Policy
               </Link>
