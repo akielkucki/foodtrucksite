@@ -5,17 +5,20 @@ import Services from "@/components/services";
 import About from "@/components/about";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
+import LoadingScreen from "@/components/loadingscreen";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <>
+        <LoadingScreen/>
       <Navbar />
+
       <Hero />
       <Products />
       <Services />
       <About />
       <Contact />
       <Footer />
-    </div>
+    </>
   );
 }

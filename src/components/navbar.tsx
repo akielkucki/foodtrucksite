@@ -74,7 +74,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="fixed left-0 right-0 top-0 z-50 bg-white/95 backdrop-blur-sm">
+      <header className="fixed left-0 right-0 top-0 z-40 bg-white/95 backdrop-blur-sm">
         <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:h-20 lg:px-8">
           {/* Logo */}
           <Link href="/" className="relative z-50 text-xl font-bold text-[#2F2F2F]">
